@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula01 - flexbox</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            border: 1px solid black;
+            width: 100%;
+            height: 200px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+            align-content:center ;
+        }
+
+        .container .item{
+            border: 1px solid red;
+            width: 20px;
+            height: 30px;
+            padding: 5px;
+        }
+        .container2 {
+            border: 1px solid black;
+            width: 80%;
+            height: 100px;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .justify-content{
+            justify-content: center;
+        }
+
+        .container2 .item{
+            border: 1px solid red;
+            width: 20px;
+            height: 30px;
+            padding: 5px;
+        }
+
+        .grow_1 {
+            flex-grow: 1;
+        }
+        .grow_2 {
+            flex-grow: 2;
+        }
+        .grow_3 {
+            flex-grow: 3;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>aula 1</h1>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+    
+    <h2>aula 2</h2>
+    <div class="container2 justify-content">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+
+    <div class="container">
+        <div class="item grow_1">1</div>
+        <div class="item grow_2">2</div>
+        <div class="item grow_3">3</div>
+    </div>
+</body>
+
+</html>
